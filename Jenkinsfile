@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh 'mkdir -p reports'
                 sh './venv/bin/pytest --junitxml=reports/test-results.xml'
-                sh './venv/bin/coverage xml'
+                sh './venv/bin/coverage.xml'
             }
         }
 
